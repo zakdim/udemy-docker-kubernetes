@@ -1,0 +1,10 @@
+= Section 5: Docker Compose with Multiple Local Containers
+
+== 5-58 Container Status with Docker Compose
+
+Run the following command in the same directory where
+`docker-compose.yml` is located
+
+```
+docker-compose ps
+```
