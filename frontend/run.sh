@@ -8,4 +8,7 @@
 #   -v /app/node_modules -v $(pwd):/app 7ed54755f5c3
 
 # 6-76: With docker-compose
-docker-compose up
+# docker-compose up
+
+# 6-81: Docker Compose for Running Tests
+docker-compose up --build
