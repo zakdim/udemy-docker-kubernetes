@@ -3,9 +3,10 @@ const redis = require('redis');
 
 const redisClient = redis.createClient({
   host: keys.redisHost,
-  port: keys.reidsPort,
+  port: keys.redisPort,
   retry_strategy: () => 1000
 });
+// Redis Subscriber
 const sub = redisClient.duplicate();
 
 function fib(index) {
