@@ -1,0 +1,5 @@
+= 8-115 npx Create React App Generation
+
+`npx create-react-app client`
+
+https://create-react-app.dev/docs/getting-started#quick-start[Official docs on CRA usage with npx are available here].
