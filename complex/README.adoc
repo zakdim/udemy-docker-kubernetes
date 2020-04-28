@@ -3,3 +3,11 @@
 `npx create-react-app client`
 
 https://create-react-app.dev/docs/getting-started#quick-start[Official docs on CRA usage with npx are available here].
+
+== Run Docker Compose
+
+```
+docker-compose up
+# OR build image and start container
+docker-compose up --build
+```
