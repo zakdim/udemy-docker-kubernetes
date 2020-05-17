@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
-metadata: 
+metadata:
   name: client-pod
   labels:
     component: web
 spec:
-  containers: 
+  containers:
     - name: client
-      image: zakdim/multi-client
+      image: stephengrider/multi-worker
       ports:
-        - containerPort: 3000
+        - containerPort: 9999

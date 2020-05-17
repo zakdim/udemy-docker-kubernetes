@@ -1,0 +1,54 @@
+== Section 12
+
+=== Lecture 181 - Mapping Existing Knowledge
+
+Create Kubernetes Node VM:
+```
+minikube start
+minikube status
+kubectl cluster-info
+```
+
+=== Lecture 187 - Connecting to Running Containers
+
+* Feed a config file to `kubectl`:
+
+```
+kubectl apply -f ./client-pod.yaml
+kubectl apply -f ./client-node-port.yaml
+```
+
+* Print the status of all running objects of type pods|services:
+```
+kubectl get pods
+kubectl get services
+```
+
+* Print IP address of kubernetes node VM
+```
+minikube ip
+```
+== Section 13
+
+=== Lecture 191 - Declarative Updates in Action
+
+```
+# kubectl describe <object type> <object name>
+kubectl describe pod client-pod
+```
+
+=== Lecture 191 - Applying a Deployment
+
+* Remove an object 
+```
+#kubectl delete -f <config-file>
+kubectl delete -f ./client-pod.yaml
+```
+* Create Deployment object using config file
+```
+kubectl apply -f ./client-deployment.yaml
+
+# Check status
+kubectl get pods
+kubectl get deployments
+```
