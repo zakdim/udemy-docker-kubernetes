@@ -89,3 +89,15 @@ $> docker run -it <IMAGE_ID>
 Map port to be able to access application at http://localhost:3000
 ```
 $> docker run -it -p 3000:3000 <IMAGE_ID>
+
+### Section 13 - Maintaining Sets of Containers with Deployments
+
+#### Lecture 203 - Imperatively Updating a Deployment's Image
+
+```
+# Create tagged and versioned image
+docker build -t zakdim/multi-client:v5 .
+
+# Push image to github
+docker push zakdim/multi-client:v5
+```

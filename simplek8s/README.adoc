@@ -37,7 +37,7 @@ minikube ip
 kubectl describe pod client-pod
 ```
 
-=== Lecture 191 - Applying a Deployment
+=== Lecture 197 - Applying a Deployment
 
 * Remove an object 
 ```
@@ -51,4 +51,19 @@ kubectl apply -f ./client-deployment.yaml
 # Check status
 kubectl get pods
 kubectl get deployments
+```
+
+=== Lecture 198 - Why Use Services?
+
+```
+kubectl get pods -o wide 
+```
+=== Lecture 199 - Scaling and Changing Deployments
+```
+kubectl apply -f ./client-deployment.yaml
+kubectl describe pod
+```
+=== Lecture 203 - Imperatively Updating a Deployment's Image
+```
+kubectl set image deployment/client-deployment client=stephengrider/multi-client:v5
 ```
