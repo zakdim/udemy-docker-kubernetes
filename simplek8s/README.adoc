@@ -78,4 +78,18 @@ eval $(minikube docker-env)
 
 # Docker now shows containers running in k8s node (VM)
 docker ps
+
+# Check logs and enter docker container running 
+# inside of Node (VM) CONTAINER_ID is retrieved 
+# by previous command
+docker logs CONTAINER_ID
+docker exec -it CONTAINER_ID sh
+
+# Similar commands are available via kubectl
+# Retrieve POD_NAME
+kubectl get pods
+# Check logs and enter container
+kubectl logs POD_NAME
+kubectl exec -it POD_NAME sh
+
 ```
