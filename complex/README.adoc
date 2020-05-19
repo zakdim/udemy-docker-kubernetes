@@ -18,3 +18,21 @@ docker-compose up --build
 # Run from inside of complex folder
 docker-compose up --build
 ```
+
+==== L213 - Applying Multiple Files with Kubectl
+```
+# Check current deployments/services
+kubectl get deployments
+kubectl get services
+
+# Delete previous deployment/services
+kubectl delete deployment client-deployment
+kubectl delete service client-node-port
+
+# Apply all the config files from specified directory
+kubectl apply -f k8s
+
+# Check created pods/services
+kubectl get pods
+kubectl get services
+```
