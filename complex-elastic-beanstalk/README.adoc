@@ -1,0 +1,23 @@
+= 8-115 npx Create React App Generation
+
+`npx create-react-app client`
+
+https://create-react-app.dev/docs/getting-started#quick-start[Official docs on CRA usage with npx are available here].
+
+== Run Docker Compose
+
+```
+docker-compose up
+# OR build image and start container
+docker-compose up --build
+```
+== S14 - A Multi-Container App with Kubernetes
+
+==== L209 - A Quick Checkpoint
+```
+# Run from inside of complex folder
+docker-compose up --build
+```
+
+*NOTE*:
+This is copy of `complex` folder at the point of S14-L2019. This source code was used in the previous sections for `CI` with `GitHub`, `Travis` and `AWS BeansTalk` deployment. The clone of this code with additional configuration files (for `Travis` and `AWS`) that was connected to `Travis CI` is also avaialable in the separate project https://github.com/zakdim/multi-docker[milti-docker @ *GitHub*]
