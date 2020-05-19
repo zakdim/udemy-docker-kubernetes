@@ -11,3 +11,10 @@ docker-compose up
 # OR build image and start container
 docker-compose up --build
 ```
+== S14 - A Multi-Container App with Kubernetes
+
+==== L209 - A Quick Checkpoint
+```
+# Run from inside of complex folder
+docker-compose up --build
+```

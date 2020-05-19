@@ -92,4 +92,7 @@ kubectl get pods
 kubectl logs POD_NAME
 kubectl exec -it POD_NAME sh
 
+# Delete cached images when pointing to minukube's
+# docker daemond
+docker system prune
 ```
