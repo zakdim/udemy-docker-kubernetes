@@ -36,3 +36,9 @@ kubectl apply -f k8s
 kubectl get pods
 kubectl get services
 ```
+
+==== L227 - Persistent Volume Access Modes
+```
+kubectl get storageclass
+kubectl describe storageclass
+```
