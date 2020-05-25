@@ -42,3 +42,12 @@ kubectl get services
 kubectl get storageclass
 kubectl describe storageclass
 ```
+
+==== L230 - Applying PVC
+```
+# List persistent values
+kubectl get pv
+# List persistent volumes claims
+kubectl get pvc
+```
+
