@@ -51,3 +51,18 @@ kubectl get pv
 kubectl get pvc
 ```
 
+==== L233 - Creating an Encoded Secret
+```
+kubectl create secret generic <secret_name> --from-literal key=value
+
+# Example for PGPASSWORD
+kubectl create secret generic pgpassword --from-literal PGPASSWORD=12345asdf
+
+# Verify secret object
+kubectl get secrets
+```
+==== L236 - Environment Variables as Strings
+```
+# Apply all the config files from specified directory
+kubectl apply -f k8s
+```
