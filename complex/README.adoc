@@ -66,3 +66,21 @@ kubectl get secrets
 # Apply all the config files from specified directory
 kubectl apply -f k8s
 ```
+
+== S15 - Handling Taffic with Ingress Controllers
+
+==== L244 - Setting Up Ingres Locally with Minikube
+https://kubernetes.github.io/ingress-nginx/deploy/#provider-specific-steps[Provider Specific Steps]
+
+```
+minikube addons enable ingress
+```
+==== L249 - "Indexes I Have Seen" is Empty
+```
+# Run inside of the server directory
+docker build -t zakdim/multi-server .
+docker push zakdim/multi-server
+
+kubectl delete -f k8s/
+kubectl apply -f k8s/
+```
