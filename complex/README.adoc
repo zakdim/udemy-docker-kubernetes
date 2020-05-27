@@ -84,3 +84,9 @@ docker push zakdim/multi-server
 kubectl delete -f k8s/
 kubectl apply -f k8s/
 ```
+
+==== L250 - The Minikube Dashboard
+
+```
+minikube dashboard
+```
